@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="100dp"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#0f0"
+            android:gravity="center"
+            android:text="这是第一个子view"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tvData"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="这是显示的内容"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#f00"
+            android:gravity="center"
+            android:text="这是第三个子view"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btLoading"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="100dp"
+        android:text="显示加载中的状态" />
+
+    <Button
+        android:id="@+id/btEmpty"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btLoading"
+        android:layout_marginTop="20dp"
+        android:text="显示空白的状态" />
+
+    <Button
+        android:id="@+id/btError"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btEmpty"
+        android:layout_marginTop="20dp"
+        android:text="显示错误的状态" />
+
+    <Button
+        android:id="@+id/btData"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btError"
+        android:layout_marginTop="20dp"
+        android:text="显示内容数据" />
+
+</RelativeLayout>
