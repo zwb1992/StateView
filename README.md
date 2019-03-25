@@ -1,4 +1,8 @@
 # StateView
+
+##效果展示
+![这里写图片描述](https://github.com/zwb1992/StateView/blob/master/StateViewSwitch/photo/stateview.gif)
+
 状态view切换  Loading  Error  Empty   data  动态切换   可自定义状态view
 
 自定义状态类：
@@ -97,10 +101,13 @@ class MyApplication : Application() {
 使用状态：
 
 class MainActivity : AppCompatActivity(), OnStateEventListener {
+
     var stateViewManager: StateViewManager? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         stateViewManager = StateViewManager.Builder()
                 .dataView(tvData)
                 .stateEventLListener(this)
