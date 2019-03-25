@@ -1,8 +1,8 @@
-package com.zwb.stateview.core
+package com.zwb.stateview.state
 
 import android.util.Log
 import android.view.View
-import com.zwb.stateview.base.BaseState
+import com.zwb.stateview.state.BaseState
 
 
 /**

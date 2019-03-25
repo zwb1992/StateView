@@ -1,14 +1,14 @@
-package com.zwb.stateview.manage
+package com.zwb.stateview.manager
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.zwb.stateview.base.IState
+import com.zwb.stateview.state.IState
 
 /**
  * 对view的添加，显示进行处理
  */
-class StateViewHelper private constructor() {
+internal class StateViewHelper private constructor() {
 
     private var dataView: View? = null
     private var parentView: ViewGroup? = null

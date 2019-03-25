@@ -1,7 +1,7 @@
 package com.zwb.stateview.repository
 
-import com.zwb.stateview.base.BaseState
-import com.zwb.stateview.base.IState
+import com.zwb.stateview.state.BaseState
+import com.zwb.stateview.state.IState
 
 
 /**

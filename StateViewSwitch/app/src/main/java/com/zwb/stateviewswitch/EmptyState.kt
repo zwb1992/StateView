@@ -2,7 +2,7 @@ package com.zwb.stateviewswitch
 
 import android.util.Log
 import android.view.View
-import com.zwb.stateview.base.BaseState
+import com.zwb.stateview.state.BaseState
 
 class EmptyState : BaseState() {
 

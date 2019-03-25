@@ -1,8 +1,7 @@
 package com.zwb.stateview.repository
 
 import android.util.Log
-import com.zwb.stateview.base.BaseState
-import com.zwb.stateview.base.IState
+import com.zwb.stateview.state.IState
 
 /**
  * 状态仓库，使用之前先注册，推荐房子Application中注册需要的状态view

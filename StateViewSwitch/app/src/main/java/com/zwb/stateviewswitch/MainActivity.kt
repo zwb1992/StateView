@@ -3,9 +3,9 @@ package com.zwb.stateviewswitch
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import com.zwb.stateview.core.CoreState
+import com.zwb.stateview.state.CoreState
 import com.zwb.stateview.event.OnStateEventListener
-import com.zwb.stateview.manage.StateViewManager
+import com.zwb.stateview.manager.StateViewManager
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), OnStateEventListener {

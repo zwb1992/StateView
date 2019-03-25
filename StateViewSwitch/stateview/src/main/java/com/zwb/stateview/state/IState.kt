@@ -1,4 +1,4 @@
-package com.zwb.stateview.base
+package com.zwb.stateview.state
 
 import android.content.Context
 import android.view.View

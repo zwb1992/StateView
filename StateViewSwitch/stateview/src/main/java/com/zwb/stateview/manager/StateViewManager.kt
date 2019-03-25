@@ -1,8 +1,8 @@
-package com.zwb.stateview.manage
+package com.zwb.stateview.manager
 
 import android.view.View
-import com.zwb.stateview.base.IState
-import com.zwb.stateview.core.CoreState
+import com.zwb.stateview.state.IState
+import com.zwb.stateview.state.CoreState
 import com.zwb.stateview.event.OnStateEventListener
 import com.zwb.stateview.repository.StateRepository
 import com.zwb.stateview.repository.StateRepositoryFactory
@@ -52,6 +52,7 @@ class StateViewManager private constructor() {
         try {
             var state = stateRepository?.getState(stateName)
             if (state != null) {
+                state.setStateEventListener(stateEventListener)
                 return stateViewHelper!!.switchState(state)
             }
             val clazz = StateRepositoryFactory.getState(stateName)

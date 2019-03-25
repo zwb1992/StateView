@@ -3,7 +3,7 @@ package com.zwb.stateviewswitch
 import android.util.Log
 import android.view.View
 import android.widget.Button
-import com.zwb.stateview.base.BaseState
+import com.zwb.stateview.state.BaseState
 
 class ErrorState : BaseState() {
 
