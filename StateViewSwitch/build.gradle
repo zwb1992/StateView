@@ -19,7 +19,7 @@ allprojects {
     repositories {
         google()
         jcenter()
-        mavenCentral()
+        maven { url '/Users/zwb/AndroidStudioProjects/StateView/StateViewSwitch/repository' }
     }
 }
 
